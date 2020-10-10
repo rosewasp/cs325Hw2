@@ -55,7 +55,6 @@ with open('data.txt', 'r') as infile:
         # sort each array
         sorted_array = stoogesort(unsorted_array)
         # write each line as string to a file
-        print(sorted_array)
         with open('stooge.out', 'a') as outfile:
             for k in range(0, len(sorted_array)):
                 outfile.write(str(sorted_array[k]) + str(' '))
