@@ -7,6 +7,7 @@
 # part of the code that handles opening of data.txt and outputs a file
 # is from HW 1.
 
+# CITATION: Wikipedia Article on Stooge Sort Algorithm
 
 def stooge_helper(array, front, end):
     """helper function for stoogesort function"""
@@ -55,7 +56,7 @@ with open('data.txt', 'r') as infile:
         sorted_array = stoogesort(unsorted_array)
         # write each line as string to a file
         print(sorted_array)
-        with open('stooge.txt', 'a') as outfile:
+        with open('stooge.out', 'a') as outfile:
             for k in range(0, len(sorted_array)):
                 outfile.write(str(sorted_array[k]) + str(' '))
             outfile.write('\n')
